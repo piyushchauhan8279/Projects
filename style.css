@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +5,10 @@
   color: #e0e0e0;
 }
 
-
 body {
   background-color: #121212;
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: "Poppins", "Inter", sans-serif;
 }
-
 
 .navbar {
   background-color: #2c2c54;
@@ -43,7 +40,6 @@ body {
   color: #00ffff;
   font-size: 1.04rem;
 }
-
 
 .firstSection {
   display: flex;
@@ -79,11 +75,9 @@ body {
   animation: upDown 3s ease-in-out infinite;
 }
 
-
 #element {
   color: blueviolet;
 }
-
 
 .my_hr {
   width: 90%;
@@ -92,7 +86,6 @@ body {
   border: none;
   margin: 40px auto;
 }
-
 
 .secondSection {
   max-width: 90%;
@@ -110,7 +103,6 @@ body {
   font-size: 28px;
   margin-top: 10px;
 }
-
 
 .box {
   display: flex;
@@ -143,16 +135,15 @@ body {
   text-align: center;
 }
 
-
 @keyframes upDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
 }
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -201,4 +192,179 @@ body {
   .secondSection h1 {
     font-size: 22px;
   }
+}
+
+.secondSection {
+  margin: auto;
+  padding: 60px 20px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.secondSection span {
+  color: rgb(146, 146, 152);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.secondSection h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.experience-card {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.15);
+}
+
+.exp-img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.experience-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.experience-card p {
+  font-size: 0.9rem;
+  color: #c0c0c0;
+}
+
+.footer {
+  background-color: #2c2c54;
+  color: #e0e0e0;
+  padding: 40px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 10px;
+}
+
+.footer-left h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 8px;
+}
+
+.footer-middle ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+  color: #00ffff;
+}
+
+.social-icons a {
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #cccccc;
+  border-top: 1px solid #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+.btn-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-weight: 800;
+  border-radius: 4px;
+  color: blueviolet;
+  border: none;
+  background-color: #00ffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f9296;
+}
+
+#download-img {
+  height: 18px;
+  width: 30px;
 }

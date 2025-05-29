@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piyush Chauhan</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/download (1).png" type="image/x-icon">
-
-
-    
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
-  
-
     <header>
       <nav class="navbar">
         <div class="left">Piyush's Portfolio</div>
@@ -20,8 +15,8 @@
           <ul>
             <li><a href="http://">Home</a></li>
             <li><a href="http://">About</a></li>
-            <li><a href="http://">Services</a></li>
             <li><a href="http://">Projects</a></li>
+            <li><a href="http://">Experience</a></li>
             <li><a href="http://">Contact Me</a></li>
           </ul>
         </div>
@@ -35,7 +30,7 @@
           <span style="color: rgb(130, 98, 160)">Piyush</span>
           <div>
             I am a Passionate
-            
+
             <span id="element"></span>
 
             <!-- Load library from the CDN -->
@@ -53,45 +48,118 @@
               });
             </script>
           </div>
+
+          <div class="btn-container">
+            <a href="assets/My_Resume.pdf" download class="btn"
+              >Resume
+              <img
+                id="download-img"
+                src="assets/downloading.png"
+                alt="Download"
+                class="btn-icon"
+              />
+            </a>
+            <a href="https://github.com/piyushchauhan8279" class="btn"
+              >GitHub</a
+            >
+          </div>
         </div>
 
         <div class="rightSection">
-          <img  class="my_img" src="./assets/profile_img.jpg" alt="photo" />
+          <img class="my_img" src="./assets/profile_img.jpg" alt="photo" />
         </div>
       </section>
 
-      <hr class="my_hr">
+      <hr class="my_hr" />
 
+      <!-- second-section -->
       <section class="secondSection">
-        <span>What I  have Done so far</span>
-        <h1>
-          Past Experience
-        </h1>
+        <span>What I have done so far</span>
+        <h1>Past Experience</h1>
 
-        <div class="box">
-          <div class="vertical-box">
-            <img class="exp-img" src="assets/download.png" alt="image">
-            <div class="vertical-title">Web Developer Intern</div>
-            <div class="vertical-desc">Did a full Stack Internship from Internshala</div>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <img
+              class="exp-img"
+              src="assets/internshala.png"
+              alt="Internshala logo"
+            />
+            <h3>Full Stack Development</h3>
+            <p>
+              Completed a Full Stack Internship via Internshala, gaining
+              experience in building dynamic web applications.
+            </p>
           </div>
-          <div class="vertical-box">
-            <img class="exp-img" src="assets/download.png" alt="image">
-            <div class="vertical-title">Web Developer Intern</div>
-            <div class="vertical-desc">Did a full Stack Internship from Internshala</div>
+
+          <div class="experience-card">
+            <img class="exp-img" src="assets/ybi.png" alt="Internshala logo" />
+            <h3>Data Science abd Machine Learning Internship</h3>
+            <p>
+              Gained hands-on experience with data preprocessing, model
+              training, and real-world applications using Python, Pandas, and
+              Scikit-learn. Worked on a project involving prediction using
+              supervised learning techniques.
+            </p>
           </div>
-          <div class="vertical-box">
-            <img class="exp-img" src="assets/download.png" alt="image">
-            <div class="vertical-title">Web Developer Intern</div>
-            <div class="vertical-desc">Did a full Stack Internship from Internshala</div>
-          </div>
-          <div class="vertical-box">
-            <img class="exp-img" src="assets/download.png" alt="image">
-            <div class="vertical-title">Web Developer Intern</div>
-            <div class="vertical-desc">Did a full Stack Internship from Internshala</div>
+
+          <div class="experience-card">
+            <img
+              class="exp-img"
+              src="assets/codsooft.jpeg"
+              alt="Internshala logo"
+            />
+            <h3>Python Programming</h3>
+            <p>
+              I developed multiple projects including a calculator, password
+              generator, and Rock-Paper-Scissors game. Gained practical
+              experience in core Python concepts, logic building, and
+              user-friendly interface design.
+            </p>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Piyush Chauhan</h2>
+          <p>Passionate Web Developer & Tech Explorer</p>
+        </div>
+
+        <div class="footer-middle">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3>Connect</h3>
+          <div class="social-icons">
+            <a href="https://github.com/piyushchauhan8279"
+              ><img src="assets/github-142-svgrepo-com.svg" alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/piyush-chauhan-972108259/"
+              ><img src="assets/icons8-linkedin-100.svg" alt="LinkedIn"
+            /></a>
+            <a href="mailto:piyushchauhan8279@gmail.com">
+              <img src="assets/email-1572-svgrepo-com.svg" alt="Mail" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Piyush Chauhan. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
