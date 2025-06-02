@@ -398,7 +398,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #1e1e2f;
+  /* background-color: #1e1e2f; */
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -527,4 +527,75 @@ body {
 .skill-heading {
   font-weight: bold;
   color: #b8dfff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+  color: #fff;
+}
+
+#projects {
+  padding: 80px 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.project-card a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.project-card a:hover {
+  border-bottom: 1px solid #ffa500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
 }
