@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color:#FAAE7B;
+  background-color:#E85C90;
   text-align: center;
 }
 
@@ -32,6 +32,9 @@ body{
   border: none;
   border-radius: 2vmin;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  font-size: 8vmin;
+  color:#EDE342;
+  background-color: #432371;
 }
 
 #reset-btn{
@@ -47,4 +50,38 @@ body{
   cursor: pointer;
   background-color: #432371;
   color: #f7e605;
+}
+
+.hidden{
+  display: none;
+}
+
+.newGame-btn{
+  padding: 20px;
+  font-size: larger;
+  border: none;
+  border-radius: 5px;
+  background-color: #432371;
+  color: #EDE342;
+  margin-bottom: 15px;
+}
+
+.newGame-btn:hover{
+  cursor:pointer;
+}
+
+#msg{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: larger;
+  color: #ffe5ec;
+  font-weight: 700;
+}
+
+#drawn{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: larger;
+  color: #ffe5ec;
+  font-weight: 700;
 }
