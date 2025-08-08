@@ -22,8 +22,10 @@ Promptify is a simple and elegant AI-powered image generator built using HTML, C
 
 1. **Clone the repository**
 
+
 ```bash
-git clone https://github.com/piyushchauhan8279/Projects/tree/main/AI%20Image%20Generator
+git clone git@github.com:piyushchauhan8279/Projects.git
+
 
 
 🙌 Acknowledgements
