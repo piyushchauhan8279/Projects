@@ -90,7 +90,7 @@ async function generateImageCards(prompt, count, resolution, style, quality) {
                              onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'>Failed to generate image</div>'"
                              loading="lazy">
                         <div class="image-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
-                            Click to view full size
+                            
                         </div>
                     </div>
                     <div class="image-info">
