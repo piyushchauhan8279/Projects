@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Image Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>AI Image Generator</h1>
+        <p>Creating Stunning Images from text prompts using AI</p>
+      </div>
+
+      <div class="generator">
+        <div class="input-group">
+          <label for="prompt"> Enter your image Description </label>
+
+          <textarea
+            class="input-prompt"
+            id="prompt"
+            placeholder="Describe about the image you want to generate... (e.g., Man walking down the streets)"
+          ></textarea>
+
+          <div class="controls">
+            <div class="control-group">
+              <label for="style">Art Style</label>
+              <select class="control-input" id="style">
+                <option value="realistic">Realistic</option>
+                <option value="artistic">Artistic</option>
+                <option value="cartoon">Cartoon</option>
+                <option value="abstract">Abstract</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="vintage">Vintage</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="resolution">Resolution</label>
+              <select class="control-input" id="resolution">
+                <option value="512x512">512 x 512</option>
+                <option value="768x768">768 x 768</option>
+                <option value="1024x1024">1024 x 1024</option>
+                <option value="1536x1536">1536 x 1536</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="quality">Quality</label>
+              <select class="control-input" id="quality">
+                <option value="standard">Standard</option>
+                <option value="high">High</option>
+                <option value="ultra">Ultra</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="count">Number of Images</label>
+              <select class="control-input" id="count">
+                <option value="1">1 Image</option>
+                <option value="2">2 Images</option>
+                <option value="4">4 Images</option>
+              </select>
+            </div>
+
+            <button class="generate-btn" id="generateBtn">
+              <span class="loading-spinner"> </span>
+
+              <span class="btn-text"> Generate Image </span>
+            </button>
+          </div>
+
+          <div class="results-section">
+            <div class="result-header">
+              <h2>Generated Images</h2>
+            </div>
+
+            <div id="results">
+              <div class="placeholder">
+                <svg
+                  class="placeholder-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+                  />
+                </svg>
+                <p>your generated image will appear here</p>
+                <p>
+                  Enter a prompt above and click "Generate Image" to get started
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
